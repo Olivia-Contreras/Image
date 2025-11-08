@@ -7,7 +7,7 @@
   <body>
     <a-scene>
       
-      
+     
 
       <a-plane position="0 0 -5" rotation="-90 0 0" width="10" height="10" color="#FFFFFF"></a-plane>
 
@@ -17,36 +17,11 @@
       <a-sphere position="0 1.9 -4" radius="0.3" color="#FFFFFF"></a-sphere>
 
       
-      <a-cylinder position="0 2.25 -4" radius="0.25" height="0.5" color="#9370DB"></a-cylinder>
+      <a-cylinder position="0 2.25 -4" radius="0.2" height="0.5" color="#9370DB"></a-cylinder>
 
-      <a-sphere position="-0.07 1.85 -3.85" radius="0.05" color="#000000"></a-sphere>
-      <a-sphere position="0.07 1.85 -3.85" radius="0.05" color="#000000"></a-sphere>
 
       
-      
-    
-      <!-- Preload assets to ensure textures are available -->
-      <a-assets>
-        <img id="sky1" src="assets/sky1.jpg">
-        <img id="tex1" src="assets/texture1.jpg">
-        <img id="tex2" src="assets/texture2.jpg">
-        <img id="tex3" src="assets/texture3.jpg">
-        <img id="tex4" src="assets/texture4.jpg">
-        <img id="plane" src="assets/plane.jpg">
-      </a-assets>
-
-      <a-sky src="#sky1" radius="30" color="#CCEFFF"></a-sky>
-      
-      <a-box src="#tex1" position="-2 0.5 -4" color="#E0F7FA"></a-box>
-      <a-sphere src="#tex2" radius="0.5" position="0 0.5 -3" color="#FFFFFF"></a-sphere>
-      <a-cone src="#tex3" height="2" radius-top="0.1" position="0 1 -6" color="#C8E6C9"></a-cone>
-      <a-box src="#tex4" position="2 0.5 -4" color="#E0F7FA"></a-box>
-
-      <a-plane src="#plane" rotation="-90 0 0" height="100" width="100"  color="#FFFFFF"></a-plane>
-
-      <a-light type="ambient" color="#AAAAFF"></a-light>
-      <a-light type="point" intensity="1" position="2 4 4" color="#CCEEFF"></a-light>
+      <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
     </a-scene>
-  
   </body>
 </html>

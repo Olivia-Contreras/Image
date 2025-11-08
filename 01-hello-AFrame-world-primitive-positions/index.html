@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
-     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="10 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0.1 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <!-- <a-sky color="#ECECEC"></a-sky> -->
-      <!-- the enviroment entity includes a sky. Choose from the presets"none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris, moon" -->
+      <!-- Ground plane -->
+      <a-plane position="0 0 -5" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+
+      <!-- Three stacked spheres -->
+      <a-sphere position="0 0.5 -4" radius="0.5" color="#FF7F50"></a-sphere>
+      <a-sphere position="0 1.5 -4" radius="0.5" color="#FFD700"></a-sphere>
+      <a-sphere position="0 2.5 -4" radius="0.5" color="#ADFF2F"></a-sphere>
+
+      <!-- Cylinder on top of the highest sphere -->
+      <a-cylinder position="0 3.5 -4" radius="0.3" height="0.8" color="#9370DB"></a-cylinder>
+
+      <!-- Forest environment -->
       <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
     </a-scene>
   </body>
